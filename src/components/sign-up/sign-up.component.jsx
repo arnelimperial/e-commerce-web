@@ -1,7 +1,7 @@
 import React from 'react';
 import './sign-up.styles.scss';
 import FormInput from '../form-input/form-input.component';
-//import CustomButton from '../custom-button/custom-button.component';
+import CustomButton from '../custom-button/custom-button.component';
 import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 
 
@@ -62,8 +62,8 @@ class SignUp extends React.Component{
                     <FormInput type='password' name='password' value={password} onChange={this.handleChange} label='Password' required />
                     <FormInput type='password' name='confirmPassword' value={confirmPassword} onChange={this.handleChange} label='Repeat Password' required />
                 
-                    {/* <CustomButton type='submit'>SIGN UP</CustomButton> */}
-                    <button type='submit'>SIGN UP</button>
+                    <CustomButton type='submit'>SIGN UP</CustomButton>
+                    {/* <button type='submit'>SIGN UP</button> */}
                 </form>
             </div>
 
