@@ -13,7 +13,7 @@ const StripeCheckoutButton = ({ price }) => {
     return(
         <StripeCheckout
             label='Pay Now'
-            name='AI Data Industries'
+            name='AI E-Store'
             billingAddress
             shippingAddress
             image='https://svgshare.com/i/CUz.svg'
